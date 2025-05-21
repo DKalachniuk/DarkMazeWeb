@@ -173,6 +173,46 @@
         margin-bottom: 18px;
       }
     }
+    .screenshots-section {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .screenshots-container {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .screenshot {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px #0006;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: #ff9100;
+      color: #18120b;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding: 18px 36px;
+      margin-top: 16px;
+      box-shadow: 0 2px 16px #0006;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .contact-btn:hover {
+      background: #ffa733;
+      color: #000;
+    }
   </style>
 </head>
 <body>
@@ -201,6 +241,21 @@
       </div>
     </div>
 
+    <!-- Screenshots Section -->
+    <div class="screenshots-section">
+      <div class="screenshots-container">
+        <img src="screenshot1.png" alt="Screenshot 1" class="screenshot">
+        <img src="screenshot2.png" alt="Screenshot 2" class="screenshot">
+        <img src="screenshot3.png" alt="Screenshot 3" class="screenshot">
+      </div>
+    </div>
+
+    <!-- Contact Developer Button -->
+    <a href="mailto:dkalachniuk@gmail.com" class="contact-btn">Contact Developer</a>
+
+    <div class="sections">
+    </div>
+    
     <!-- Sections: Reviews and How to Play -->
     <div class="sections">
       <div class="section">
