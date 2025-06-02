@@ -7,10 +7,14 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%;
+      min-height: 100%;
+      background: radial-gradient(ellipse at center, #18120b 0%, #0a0806 100%);
+    }
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(ellipse at center, #18120b 0%, #0a0806 100%);
       color: #f5f5f5;
       font-family: 'Inter', Arial, sans-serif;
       min-height: 100vh;
@@ -55,18 +59,17 @@
       margin-right: 12px;
     }
     .feature-blocks-row {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  gap: 32px; /* Space between feature blocks */
-  margin-bottom: 32px;
-}
-
-.feature-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 32px;
+      margin-top: 8px;
+    }
+    .feature-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .feature-icon {
       width: 100px;
       height: 100px;
@@ -77,6 +80,10 @@
       justify-content: center;
       margin-bottom: 12px;
       box-shadow: 0 2px 16px #0008;
+      transition: transform 0.2s;
+    }
+    .feature-icon:hover {
+      transform: scale(1.05);
     }
     .feature-label {
       color: #ff9100;
@@ -90,6 +97,7 @@
       width: 100%;
       margin-bottom: 32px;
       gap: 16px;
+      margin-top: 16px;
     }
     .section {
       flex: 1;
@@ -165,33 +173,43 @@
       .container {
         padding: 16px 4px 0 4px;
       }
+      .feature-blocks-row {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+      }
+      .screenshots-container {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+      }
       .sections {
         flex-direction: column;
         gap: 0;
-      }
-      .section {
-        margin-bottom: 18px;
+        margin-top: 16px;
       }
     }
     .screenshots-section {
       margin-bottom: 32px;
+      margin-top: 16px;
       text-align: center;
     }
-
     .screenshots-container {
       display: flex;
       justify-content: center;
       gap: 16px;
       margin-top: 16px;
     }
-
     .screenshot {
       width: 200px;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 16px #0006;
+      transition: transform 0.2s;
     }
-
+    .screenshot:hover {
+      transform: scale(1.05);
+    }
     .contact-btn {
       display: inline-block;
       background: #ff9100;
@@ -201,28 +219,37 @@
       font-size: 1.3rem;
       font-weight: 700;
       padding: 18px 36px;
-      margin-top: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
       box-shadow: 0 2px 16px #0006;
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
       text-align: center;
       text-decoration: none;
     }
-
     .contact-btn:hover {
       background: #ffa733;
       color: #000;
+    }
+    .app-gif {
+      width: 300px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px #000a;
+      cursor: pointer;
+      transition: transform 0.2s;
+      margin-bottom: 32px;
+    }
+    .app-gif:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- App Icon -->
-    <img src="icon.png" alt="Dark Maze App Icon" class="app-icon">
-
-    <!-- App Store Button -->
-    <a href="https://apps.apple.com/app/id6746203606" >
-      <img src="download_on_the appstore.png" alt="Apple Logo" width="300" height="105">
+    <!-- App Icon and App Store Button replaced with clickable GIF -->
+    <a href="https://apps.apple.com/app/id6746203606">
+      <img src="darkmaze.gif" alt="Dark Maze Game" class="app-gif">
     </a>
 
     <!-- Feature Block -->
@@ -252,9 +279,6 @@
 
     <!-- Contact Developer Button -->
     <a href="mailto:dkalachniuk@gmail.com" class="contact-btn">Contact Developer</a>
-
-    <div class="sections">
-    </div>
     
     <!-- Sections: Reviews and How to Play -->
     <div class="sections">
