@@ -268,6 +268,68 @@
       </div>
     </div>
 
+    <!-- Spectra Hero Section -->
+    <div class="section" style="margin: 32px 0; text-align: center;">
+      <h2 style="color: #ff9100; font-size: 1.8rem; margin-bottom: 24px;">New Hero: Spectra</h2>
+      <div style="background: rgba(30, 20, 10, 0.5); border-radius: 16px; padding: 24px; margin-bottom: 24px; transition: transform 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="spectra.png" alt="Spectra Hero" style="width: 200px; height: auto; border-radius: 16px; margin-bottom: 20px; box-shadow: 0 4px 32px #000a;">
+        <p style="color: #fffbe6; font-size: 1.1rem; line-height: 1.6; margin-bottom: 16px;">
+          Meet Spectra, the newest hero in Dark Maze! With the exclusive ability to phase through walls once per level, 
+          Spectra brings a whole new strategic dimension to your maze-solving adventures.
+        </p>
+        <div style="background: rgba(255, 145, 0, 0.1); border-radius: 12px; padding: 16px; margin-top: 20px;">
+          <h3 style="color: #ff9100; font-size: 1.2rem; margin-bottom: 12px;">Special Ability: Wall Phase</h3>
+          <p style="color: #fffbe6; font-size: 1rem; line-height: 1.6;">
+            Use Spectra's unique power to phase through any wall in the maze once per level. 
+            Perfect for escaping tight situations or finding shortcuts to the exit!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Carousel Section -->
+    <div class="section" style="margin: 32px 0; text-align: center;">
+      <h2 style="color: #ff9100; font-size: 1.8rem; margin-bottom: 24px;">Choose Your Hero</h2>
+      <div style="display: flex; gap: 24px; overflow-x: auto; padding: 16px 0; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+        <!-- Glow -->
+        <div style="flex: 0 0 280px; scroll-snap-align: start; background: rgba(30, 20, 10, 0.5); border-radius: 16px; padding: 20px; transition: transform 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="hero1.png" alt="Glow Hero" style="width: 160px; height: auto; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 4px 32px #000a;">
+          <h3 style="color: #ff9100; font-size: 1.3rem; margin-bottom: 12px;">Glow</h3>
+          <p style="color: #fffbe6; font-size: 1rem; line-height: 1.6;">
+            Lights up the maze with magical brilliance. Never lost in the dark!
+          </p>
+        </div>
+        
+        <!-- Tank -->
+        <div style="flex: 0 0 280px; scroll-snap-align: start; background: rgba(30, 20, 10, 0.5); border-radius: 16px; padding: 20px; transition: transform 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="hero2.png" alt="Tank Hero" style="width: 160px; height: auto; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 4px 32px #000a;">
+          <h3 style="color: #ff9100; font-size: 1.3rem; margin-bottom: 12px;">Tank</h3>
+          <p style="color: #fffbe6; font-size: 1rem; line-height: 1.6;">
+            Tough, brave, and always first into danger. Can take a hit!
+          </p>
+        </div>
+        
+        <!-- Vine -->
+        <div style="flex: 0 0 280px; scroll-snap-align: start; background: rgba(30, 20, 10, 0.5); border-radius: 16px; padding: 20px; transition: transform 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="hero4.png" alt="Vine Hero" style="width: 160px; height: auto; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 4px 32px #000a;">
+          <h3 style="color: #ff9100; font-size: 1.3rem; margin-bottom: 12px;">Vine</h3>
+          <p style="color: #fffbe6; font-size: 1rem; line-height: 1.6;">
+            Swift and sneaky, glides through the maze like a shadow.
+          </p>
+        </div>
+      </div>
+      <style>
+        /* Hide scrollbar but keep functionality */
+        .section::-webkit-scrollbar {
+          display: none;
+        }
+        .section {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      </style>
+    </div>
+
     <!-- Screenshots Section -->
     <div class="screenshots-section">
       <div class="screenshots-container">
